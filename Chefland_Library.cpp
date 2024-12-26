@@ -23,15 +23,14 @@ int main()
             cin >> A[i];
         }
 
-        // Map to track the highest penalty for each return day
+        
         unordered_map<int, int> max_penalty;
 
         for (int i = 0; i < N; ++i)
         {
             int day = A[i];
-            int penalty = i + 1; // Book i is returned i+1 days late
+            int penalty = i + 1; 
 
-            // Update the maximum penalty for the return day
             if (max_penalty.find(day) == max_penalty.end())
             {
                 max_penalty[day] = penalty;
