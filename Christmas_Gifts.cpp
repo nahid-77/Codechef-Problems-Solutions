@@ -13,5 +13,6 @@ int main()
         ans = 1000 / (2 * ((h * l) + (l * w) + (w * h)));
         cout << ans << endl;
     }
+    
     return 0;
 }
